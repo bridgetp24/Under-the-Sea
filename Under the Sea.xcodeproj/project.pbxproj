@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		116BB7E627ECED5500696EFB /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116BB7E527ECED5500696EFB /* HomeTab.swift */; };
+		116BB7E827ECED8B00696EFB /* GuitarTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116BB7E727ECED8B00696EFB /* GuitarTab.swift */; };
+		116BB7EA27ECEDBA00696EFB /* SteelDrumTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116BB7E927ECEDBA00696EFB /* SteelDrumTab.swift */; };
+		116BB7EC27ECEDD500696EFB /* DrumKitTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116BB7EB27ECEDD500696EFB /* DrumKitTab.swift */; };
+		116BB7EE27ECEDFB00696EFB /* FluteTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116BB7ED27ECEDFB00696EFB /* FluteTab.swift */; };
 		57D90FAC27ECE8E500788A76 /* Under_the_SeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D90FAB27ECE8E500788A76 /* Under_the_SeaApp.swift */; };
 		57D90FAE27ECE8E500788A76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D90FAD27ECE8E500788A76 /* ContentView.swift */; };
 		57D90FB027ECE8E700788A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D90FAF27ECE8E700788A76 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		116BB7E527ECED5500696EFB /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		116BB7E727ECED8B00696EFB /* GuitarTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarTab.swift; sourceTree = "<group>"; };
+		116BB7E927ECEDBA00696EFB /* SteelDrumTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteelDrumTab.swift; sourceTree = "<group>"; };
+		116BB7EB27ECEDD500696EFB /* DrumKitTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumKitTab.swift; sourceTree = "<group>"; };
+		116BB7ED27ECEDFB00696EFB /* FluteTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluteTab.swift; sourceTree = "<group>"; };
 		57D90FA827ECE8E500788A76 /* Under the Sea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Under the Sea.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D90FAB27ECE8E500788A76 /* Under_the_SeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Under_the_SeaApp.swift; sourceTree = "<group>"; };
 		57D90FAD27ECE8E500788A76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +65,11 @@
 				57D90FAD27ECE8E500788A76 /* ContentView.swift */,
 				57D90FAF27ECE8E700788A76 /* Assets.xcassets */,
 				57D90FB127ECE8E700788A76 /* Preview Content */,
+				116BB7E527ECED5500696EFB /* HomeTab.swift */,
+				116BB7E727ECED8B00696EFB /* GuitarTab.swift */,
+				116BB7E927ECEDBA00696EFB /* SteelDrumTab.swift */,
+				116BB7EB27ECEDD500696EFB /* DrumKitTab.swift */,
+				116BB7ED27ECEDFB00696EFB /* FluteTab.swift */,
 			);
 			path = "Under the Sea";
 			sourceTree = "<group>";
@@ -137,6 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				116BB7EC27ECEDD500696EFB /* DrumKitTab.swift in Sources */,
+				116BB7EA27ECEDBA00696EFB /* SteelDrumTab.swift in Sources */,
+				116BB7E627ECED5500696EFB /* HomeTab.swift in Sources */,
+				116BB7EE27ECEDFB00696EFB /* FluteTab.swift in Sources */,
+				116BB7E827ECED8B00696EFB /* GuitarTab.swift in Sources */,
 				57D90FAE27ECE8E500788A76 /* ContentView.swift in Sources */,
 				57D90FAC27ECE8E500788A76 /* Under_the_SeaApp.swift in Sources */,
 			);

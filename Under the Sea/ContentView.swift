@@ -44,65 +44,6 @@ struct ContentView: View {
 
     }
 }
-struct HomeTab: View {
-    var body: some View {
-        VStack {
-            Text("Todo: Create home page")
-                .font(.title)
-                .multilineTextAlignment(.center)
-        }
-
-    }
-}
-struct GuitarTab: View {
-    var body: some View {
-        VStack {
-            Text("Todo: Allijah")
-                .font(.title)
-                .multilineTextAlignment(.center)
-        }
-
-    }
-}
-struct SteelDrumsTab: View {
-    var body: some View {
-        
-        VStack {
-            Text("Todo: Daniel")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.black)
-  
-        }
-
-    }
-}
-struct DrumKitTab: View {
-    var body: some View {
-        
-        VStack {
-            Text("Todo: Andrea")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.black)
-  
-        }
-
-    }
-}
-struct FluteTab: View {
-    var body: some View {
-        
-        VStack {
-            Text("Todo: Bridget ")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.black)
-  
-        }
-
-    }
-}
 
 
 struct ContentView_Previews: PreviewProvider {
