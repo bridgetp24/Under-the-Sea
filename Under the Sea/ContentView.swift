@@ -28,7 +28,7 @@ struct ContentView: View {
                 }.tag(3)
                 DrumKitTab()
                     .tabItem {
-                        Text("Steel Drum")
+                        Text("Drum kit")
                         Image(systemName: "music.note.list")
                 }.tag(4)
                 FluteTab()
