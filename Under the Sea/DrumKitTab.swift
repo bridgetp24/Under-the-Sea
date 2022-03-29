@@ -12,7 +12,7 @@ struct DrumKitTab: View {
     var body: some View {
         
         VStack {
-            Text("Todo: Andrea")
+            Text("Todo: Bridget")
                 .font(.title)
                 .foregroundColor(Color.black)
   
