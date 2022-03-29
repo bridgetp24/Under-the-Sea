@@ -15,8 +15,10 @@ struct FluteTab: View {
             Text("Todo: Andrea ")
                 .font(.title)
                 .foregroundColor(Color.black)
-  
+            Image("panflute2")
+                .resizable()
+                .border(.black,width: 3)
         }
-
+ 
     }
 }
