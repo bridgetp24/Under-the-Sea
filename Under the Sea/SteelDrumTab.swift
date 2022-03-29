@@ -9,14 +9,29 @@ import Foundation
 import SwiftUI
 
 struct SteelDrumsTab: View {
+    var midiModule = MIDIModule(defaultPatch: 114, defaultChannel: 0, midiFileName: "", midiFileExt: "")
+    @State var text = "TODO: Daniel"
+    
     var body: some View {
         
         VStack {
-            Text("Todo: Daniel")
+            Text(text)
                 .font(.title)
-                .foregroundColor(Color.black)
-  
+                .onTapGesture {
+                    midiModule.note(pitch: 60, duration: 1, channel: 0)
+                    text = "tapped"
+                }
+                .onLongPressGesture {
+                    midiModule.note(pitch: 62, duration: 1, channel: 0)
+                    text = "pressed"
+                }
         }
 
+    }
+}
+
+struct Previews_SteelDrumTab_Previews: PreviewProvider {
+    static var previews: some View {
+        SteelDrumsTab()
     }
 }
