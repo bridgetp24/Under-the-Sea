@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-struct GuitarTab: View {
+struct UkeTab: View {
     var body: some View {
         VStack {
-            Text("Todo: Allijah")
+            Text("ToDo: Alijah")
                 .font(.title)
                 .multilineTextAlignment(.center)
         }
