@@ -16,7 +16,7 @@ struct ContentView: View {
                     Image(systemName: "music.note.list")
                     
                 }.tag(1)
-                GuitarTab().tabItem {
+                UkeTab().tabItem {
                     Text("Guitar")
                     Image(systemName: "music.note.list")
                     

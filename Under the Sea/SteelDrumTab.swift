@@ -20,27 +20,12 @@ struct SteelDrumsTab: View {
                     .resizable()
                     .scaledToFit()
                 NoteButton(text: "C", midiModule: midiModule, pitch: 60, duration: 1, channel: 0)
-                    .position(x: 450, y: 775)
+                    .offset(x: 50, y: 250)
                 NoteButton(text: "D", midiModule: midiModule, pitch: 62, duration: 1, channel: 0)
-                    .position(x: 650, y: 600)
+                    .offset(x: 250, y: 100)
             }
         }
 
-    }
-}
-
-struct NoteButton: View {
-    var text: String
-    var midiModule: MIDIModule
-    var pitch: UInt8
-    var duration: Double
-    var channel: UInt8
-    
-    
-    var body: some View {
-        Button(text) {
-            midiModule.note(pitch: pitch, duration: duration, channel: channel)
-        }
     }
 }
 
