@@ -12,7 +12,7 @@ struct FluteTab: View {
     var body: some View {
         
         VStack {
-            Text("Todo: Bridget ")
+            Text("Todo: Andrea ")
                 .font(.title)
                 .foregroundColor(Color.black)
             Image("panflute2")
