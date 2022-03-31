@@ -18,3 +18,9 @@ struct HomeTab: View {
 
     }
 }
+
+struct Previews_HomeTab_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeTab()
+    }
+}
