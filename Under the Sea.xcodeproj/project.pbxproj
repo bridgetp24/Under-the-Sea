@@ -16,6 +16,7 @@
 		57D90FAE27ECE8E500788A76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D90FAD27ECE8E500788A76 /* ContentView.swift */; };
 		57D90FB027ECE8E700788A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D90FAF27ECE8E700788A76 /* Assets.xcassets */; };
 		57D90FB327ECE8E700788A76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D90FB227ECE8E700788A76 /* Preview Assets.xcassets */; };
+		778F493C27F624F900691A18 /* BandUkeChords in Resources */ = {isa = PBXBuildFile; fileRef = 778F493B27F624F900691A18 /* BandUkeChords */; };
 		F9FCA66627F0DB070027CD35 /* MIDIModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FCA66527F0DB070027CD35 /* MIDIModule.swift */; };
 		F9FCA66827F0EC8F0027CD35 /* gs_instruments.dls in Resources */ = {isa = PBXBuildFile; fileRef = F9FCA66727F0EC8F0027CD35 /* gs_instruments.dls */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		57D90FAD27ECE8E500788A76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57D90FAF27ECE8E700788A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D90FB227ECE8E700788A76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		778F493B27F624F900691A18 /* BandUkeChords */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BandUkeChords; sourceTree = "<group>"; };
 		F9FCA66527F0DB070027CD35 /* MIDIModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIModule.swift; sourceTree = "<group>"; };
 		F9FCA66727F0EC8F0027CD35 /* gs_instruments.dls */ = {isa = PBXFileReference; lastKnownFileType = file; path = gs_instruments.dls; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +51,7 @@
 		57D90F9F27ECE8E500788A76 = {
 			isa = PBXGroup;
 			children = (
+				778F493B27F624F900691A18 /* BandUkeChords */,
 				57D90FAA27ECE8E500788A76 /* Under the Sea */,
 				57D90FA927ECE8E500788A76 /* Products */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				57D90FB327ECE8E700788A76 /* Preview Assets.xcassets in Resources */,
 				F9FCA66827F0EC8F0027CD35 /* gs_instruments.dls in Resources */,
+				778F493C27F624F900691A18 /* BandUkeChords in Resources */,
 				57D90FB027ECE8E700788A76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
