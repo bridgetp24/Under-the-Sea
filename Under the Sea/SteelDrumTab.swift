@@ -26,6 +26,7 @@ struct SteelDrumsTab: View {
                     NoteButton(text: pitchToText(pitch: pitch), midiModule: midiModule, pitch: UInt8(pitch), duration: 1, channel: 0)
                         .scaleEffect(3)
                         .offset(x: cos(angle) * 275, y: sin(angle) * 275)
+                        .foregroundColor(Color.black)
                 }
                 // Middle notes
                 ForEach(0..<12) {i in
@@ -34,6 +35,7 @@ struct SteelDrumsTab: View {
                     NoteButton(text: pitchToText(pitch: pitch), midiModule: midiModule, pitch: UInt8(pitch), duration: 1, channel: 0)
                         .scaleEffect(2)
                         .offset(x: cos(angle) * 150, y: sin(angle) * 150)
+                        .foregroundColor(Color.black)
                 }
                 // Inner notes
                 ForEach(0..<5) {i in
@@ -42,6 +44,7 @@ struct SteelDrumsTab: View {
                     NoteButton(text: pitchToText(pitch: pitch), midiModule: midiModule, pitch: UInt8(pitch), duration: 1, channel: 0)
                         .scaleEffect(1.5)
                         .offset(x: cos(angle) * 50, y: sin(angle) * 50)
+                        .foregroundColor(Color.black)
                 }
             }
         }
