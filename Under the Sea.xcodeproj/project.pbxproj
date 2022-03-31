@@ -15,8 +15,9 @@
 		57D90FAE27ECE8E500788A76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D90FAD27ECE8E500788A76 /* ContentView.swift */; };
 		57D90FB027ECE8E700788A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D90FAF27ECE8E700788A76 /* Assets.xcassets */; };
 		57D90FB327ECE8E700788A76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D90FB227ECE8E700788A76 /* Preview Assets.xcassets */; };
+		778F493E27F629B900691A18 /* GuitarTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F493D27F629B900691A18 /* GuitarTab.swift */; };
+		778F494027F629F600691A18 /* BandUkeChords in Resources */ = {isa = PBXBuildFile; fileRef = 778F493F27F629F600691A18 /* BandUkeChords */; };
 		F913A55027F3C3F60075E723 /* NoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913A54F27F3C3F60075E723 /* NoteButton.swift */; };
-		F913A55227F3C6690075E723 /* UkeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913A55127F3C6690075E723 /* UkeTab.swift */; };
 		F9FCA66627F0DB070027CD35 /* MIDIModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FCA66527F0DB070027CD35 /* MIDIModule.swift */; };
 		F9FCA66827F0EC8F0027CD35 /* gs_instruments.dls in Resources */ = {isa = PBXBuildFile; fileRef = F9FCA66727F0EC8F0027CD35 /* gs_instruments.dls */; };
 /* End PBXBuildFile section */
@@ -31,8 +32,9 @@
 		57D90FAD27ECE8E500788A76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57D90FAF27ECE8E700788A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D90FB227ECE8E700788A76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		778F493D27F629B900691A18 /* GuitarTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarTab.swift; sourceTree = "<group>"; };
+		778F493F27F629F600691A18 /* BandUkeChords */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BandUkeChords; sourceTree = "<group>"; };
 		F913A54F27F3C3F60075E723 /* NoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteButton.swift; sourceTree = "<group>"; };
-		F913A55127F3C6690075E723 /* UkeTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UkeTab.swift; sourceTree = "<group>"; };
 		F9FCA66527F0DB070027CD35 /* MIDIModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIModule.swift; sourceTree = "<group>"; };
 		F9FCA66727F0EC8F0027CD35 /* gs_instruments.dls */ = {isa = PBXFileReference; lastKnownFileType = file; path = gs_instruments.dls; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 		57D90FAA27ECE8E500788A76 /* Under the Sea */ = {
 			isa = PBXGroup;
 			children = (
+				778F493F27F629F600691A18 /* BandUkeChords */,
 				F913A54F27F3C3F60075E723 /* NoteButton.swift */,
 				F9FCA66727F0EC8F0027CD35 /* gs_instruments.dls */,
 				57D90FAB27ECE8E500788A76 /* Under_the_SeaApp.swift */,
@@ -74,11 +77,11 @@
 				57D90FAF27ECE8E700788A76 /* Assets.xcassets */,
 				57D90FB127ECE8E700788A76 /* Preview Content */,
 				116BB7E527ECED5500696EFB /* HomeTab.swift */,
+				778F493D27F629B900691A18 /* GuitarTab.swift */,
 				116BB7E927ECEDBA00696EFB /* SteelDrumTab.swift */,
 				116BB7EB27ECEDD500696EFB /* DrumKitTab.swift */,
 				116BB7ED27ECEDFB00696EFB /* FluteTab.swift */,
 				F9FCA66527F0DB070027CD35 /* MIDIModule.swift */,
-				F913A55127F3C6690075E723 /* UkeTab.swift */,
 			);
 			path = "Under the Sea";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				57D90FB327ECE8E700788A76 /* Preview Assets.xcassets in Resources */,
 				F9FCA66827F0EC8F0027CD35 /* gs_instruments.dls in Resources */,
+				778F494027F629F600691A18 /* BandUkeChords in Resources */,
 				57D90FB027ECE8E700788A76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,8 +170,8 @@
 				F9FCA66627F0DB070027CD35 /* MIDIModule.swift in Sources */,
 				116BB7EA27ECEDBA00696EFB /* SteelDrumTab.swift in Sources */,
 				116BB7E627ECED5500696EFB /* HomeTab.swift in Sources */,
-				F913A55227F3C6690075E723 /* UkeTab.swift in Sources */,
 				116BB7EE27ECEDFB00696EFB /* FluteTab.swift in Sources */,
+				778F493E27F629B900691A18 /* GuitarTab.swift in Sources */,
 				57D90FAE27ECE8E500788A76 /* ContentView.swift in Sources */,
 				F913A55027F3C3F60075E723 /* NoteButton.swift in Sources */,
 				57D90FAC27ECE8E500788A76 /* Under_the_SeaApp.swift in Sources */,
