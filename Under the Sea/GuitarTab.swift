@@ -17,7 +17,7 @@ struct GuitarTab: View {
     
     var body: some View {
         ZStack {
-            Color.teal.opacity(0.25)
+            Color.teal.opacity(0.25).ignoresSafeArea()
             VStack {
                 Text("Play The Ukulele!")
                     .font(.title)
@@ -28,57 +28,54 @@ struct GuitarTab: View {
                     .onAppear {
                         setUp()
                     }
-                HStack {
-                    Button(action: playMidiApp1, label: {
-                        Image(systemName: "play")
-                        
+                    .overlay(content: {
+                        HStack(spacing:10){
+                            Rectangle()
+                                .frame(width: 25, height: 500)
+                                .foregroundColor(.brown)
+                                .opacity(0.01)
+                                .onTapGesture {
+                                    playMidiApp1()
+                                }
+                            Rectangle()
+                                .frame(width: 25, height: 500)
+                                .foregroundColor(.brown)
+                                .opacity(0.01)
+                                .onTapGesture {
+                                    playMidiApp2()
+                                    print(midiPlayer2.duration)
+                                }
+                            Rectangle()
+                                .frame(width: 25, height: 500)
+                                .foregroundColor(.brown)
+                                .opacity(0.01)
+                                .onTapGesture {
+                                    playMidiApp3()
+                                    print(midiPlayer3.duration)
+                                }
+                            Rectangle()
+                                .frame(width: 25, height: 500)
+                                .foregroundColor(.brown)
+                                .opacity(0.01)
+                                .onTapGesture {
+                                    playMidiApp4()
+                                    print(midiPlayer4.duration)
+                                }
+                        }.offset(x: 0, y: -50)
+
                     })
-                    
-                    Button(action: stopMidiApp1, label: {
-                        Image(systemName: "pause")
-                        
-                    })
-                    HStack {
-                        Button(action: playMidiApp2, label: {
-                            Image(systemName: "play")
-                            
-                        })
-                        
-                        Button(action: stopMidiApp2, label: {
-                            Image(systemName: "pause")
-                            
-                        })
-                        
-                        HStack {
-                            Button(action: playMidiApp3, label: {
-                                Image(systemName: "play")
-                                
-                            })
-                            
-                            Button(action: stopMidiApp3, label: {
-                                Image(systemName: "pause")
-                                
-                            })
-                            HStack {
-                                Button(action: playMidiApp4, label: {
-                                    Image(systemName: "play")
-                                    
-                                })
-                                
-                                Button(action: stopMidiApp4, label: {
-                                    Image(systemName: "pause")
-                                    
-                                })
-                            }
+                
+                
+                
                         }
                     }
                 }
                 
                 
-            }
-        }
-    }
+            
+    
     func playMidiApp1() {
+        midiPlayer1.currentPosition = 0.0
         midiPlayer1.play()
     }
     func playMidiApp2() {
@@ -91,18 +88,6 @@ struct GuitarTab: View {
         midiPlayer4.play()
     }
     
-    func stopMidiApp1() {
-        midiPlayer1.stop()
-    }
-    func stopMidiApp2() {
-        midiPlayer2.stop()
-    }
-    func stopMidiApp3() {
-        midiPlayer3.stop()
-    }
-    func stopMidiApp4() {
-        midiPlayer4.stop()
-    }
     
     
     func setUp() {

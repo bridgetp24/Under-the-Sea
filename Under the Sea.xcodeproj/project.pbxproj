@@ -27,6 +27,7 @@
 		116BB7E927ECEDBA00696EFB /* SteelDrumTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteelDrumTab.swift; sourceTree = "<group>"; };
 		116BB7EB27ECEDD500696EFB /* DrumKitTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumKitTab.swift; sourceTree = "<group>"; };
 		116BB7ED27ECEDFB00696EFB /* FluteTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluteTab.swift; sourceTree = "<group>"; };
+		4286470627F75029008704E8 /* Under the Sea.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Under the Sea.entitlements"; sourceTree = "<group>"; };
 		57D90FA827ECE8E500788A76 /* Under the Sea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Under the Sea.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D90FAB27ECE8E500788A76 /* Under_the_SeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Under_the_SeaApp.swift; sourceTree = "<group>"; };
 		57D90FAD27ECE8E500788A76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		57D90FAA27ECE8E500788A76 /* Under the Sea */ = {
 			isa = PBXGroup;
 			children = (
+				4286470627F75029008704E8 /* Under the Sea.entitlements */,
 				778F493F27F629F600691A18 /* BandUkeChords */,
 				F913A54F27F3C3F60075E723 /* NoteButton.swift */,
 				F9FCA66727F0EC8F0027CD35 /* gs_instruments.dls */,
@@ -302,17 +304,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Under the Sea/Under the Sea.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Under the Sea/Preview Content\"";
-				DEVELOPMENT_TEAM = F5C4Y658FV;
+				DEVELOPMENT_TEAM = 722BH6KU5X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +325,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bpeterkin.Under-the-Sea";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,17 +337,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Under the Sea/Under the Sea.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Under the Sea/Preview Content\"";
-				DEVELOPMENT_TEAM = F5C4Y658FV;
+				DEVELOPMENT_TEAM = 722BH6KU5X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +358,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bpeterkin.Under-the-Sea";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
