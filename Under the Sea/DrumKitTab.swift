@@ -11,7 +11,6 @@ import SwiftUI
 struct DrumKitTab: View {
     let midiModule = MIDIModule(defaultPatch: 0, defaultChannel: 9, midiFileName: "", midiFileExt: "")
     var body: some View {
-        ZStack {
             VStack {
                 let pitch = 61
                 Text("Bongos")
@@ -27,35 +26,43 @@ struct DrumKitTab: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     VStack() {
+                        Spacer()
                         HStack {
+                            Spacer()
                             NoteButton(text: "High bongo", midiModule: midiModule, pitch: UInt8(pitch - 1), duration: 1, channel: 9)
-                                .padding(.leading, 0)
-                                .frame(width: 125.0, height: 50.0)
-                                .scaleEffect(1)
+                                .padding(.bottom, 40)
+                                .scaleEffect(2)
                                 .foregroundColor(Color.black)
                             
                             Spacer()
+                            Spacer()
                             NoteButton(text: "Low bongo", midiModule: midiModule, pitch: UInt8(pitch), duration: 1, channel: 9)
-                                .padding()
-                                .frame(width: 150.0, height: 50.0)
-                                .scaleEffect(1)
+                                .padding(.bottom, 40)
+                                .scaleEffect(2)
                                 .foregroundColor(Color.black)
-                            
-                        }.frame(width: 300, height: 50)
+                            Spacer()
+                        }
                         Spacer()
-                    }.frame(width: 300, height: 190)
-
+                        Spacer()
+                    }
 
                     
                         
                 }
-                .frame(width: 300, height: 190)
                 
-            }
-        }.background(Color.blue)
-
-
-    }
+                
+                
+            } .background(
+                Image("Background")
+                    .resizable()
+                    .scaledToFill()
+            )
+        }
 
 }
 
+struct Previews_DrumKitTab_Previews: PreviewProvider {
+    static var previews: some View {
+        DrumKitTab()
+    }
+}
