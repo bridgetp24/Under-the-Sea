@@ -17,7 +17,9 @@ struct GuitarTab: View {
     
     var body: some View {
         ZStack {
-            
+            Image("Background")
+                .resizable()
+                .scaledToFit()
             VStack {
                 Text("Play The Ukulele!")
                     .font(.title)
@@ -61,21 +63,18 @@ struct GuitarTab: View {
                                     
                                 }
                         }.offset(x: 0, y: -50)
-
+                        
                     })
                 
-                   
-                
-            } .background(
-                Image("Background")
-                    .resizable()
-                    .scaledToFit()
-                        )
-                    }
-                }
                 
                 
+            }
+        }
             
+    }
+    
+    
+    
     
     func playMidiApp1() {
         midiPlayer1.currentPosition = 0.0
