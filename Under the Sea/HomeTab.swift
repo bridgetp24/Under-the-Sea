@@ -11,7 +11,10 @@ import SwiftUI
 struct HomeTab: View {
     var body: some View {
         VStack {
-            Text("Todo: Create home page")
+            Image("appImage-1")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Text("Take a trip to the ocean by creating a under the sea jam! Select an instrument to get started.")
                 .font(.title)
                 .multilineTextAlignment(.center)
         }

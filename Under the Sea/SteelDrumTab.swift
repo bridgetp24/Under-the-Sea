@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 
+/**
+ This is an interactive steel drum. This View expects the device to be an iPad, vertical or horizontal
+ */
 struct SteelDrumsTab: View {
     var midiModule = MIDIModule(defaultPatch: 114, defaultChannel: 0, midiFileName: "", midiFileExt: "")
     
@@ -24,7 +27,7 @@ struct SteelDrumsTab: View {
                     let pitch = i + 60
                     let angle = -Double(i+3) * 7 * Double.pi/6
                     NoteButton(text: pitchToText(pitch: pitch), midiModule: midiModule, pitch: UInt8(pitch), duration: 1, channel: 0)
-                        .scaleEffect(3)
+                        .scaleEffect(4)
                         .offset(x: cos(angle) * 275, y: sin(angle) * 275)
                         .foregroundColor(Color.black)
                 }
@@ -33,7 +36,7 @@ struct SteelDrumsTab: View {
                     let pitch = i + 72
                     let angle = -Double(i+3) * 7 * Double.pi/6
                     NoteButton(text: pitchToText(pitch: pitch), midiModule: midiModule, pitch: UInt8(pitch), duration: 1, channel: 0)
-                        .scaleEffect(2)
+                        .scaleEffect(3)
                         .offset(x: cos(angle) * 150, y: sin(angle) * 150)
                         .foregroundColor(Color.black)
                 }
@@ -42,12 +45,17 @@ struct SteelDrumsTab: View {
                     let pitch = i + 84
                     let angle = Double(i+3) * 4 * Double.pi/5
                     NoteButton(text: pitchToText(pitch: pitch), midiModule: midiModule, pitch: UInt8(pitch), duration: 1, channel: 0)
-                        .scaleEffect(1.5)
+                        .scaleEffect(2)
                         .offset(x: cos(angle) * 50, y: sin(angle) * 50)
                         .foregroundColor(Color.black)
                 }
             }
         }
+        .background(
+            Image("Background")
+                .resizable()
+                .scaledToFill()
+        )
     }
     
     func pitchToText(pitch: Int) -> String {
