@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 
+/**
+ This is an interactive steel drum. This View expects the device to be an iPad, vertical or horizontal
+ */
 struct SteelDrumsTab: View {
     var midiModule = MIDIModule(defaultPatch: 114, defaultChannel: 0, midiFileName: "", midiFileExt: "")
     
