@@ -14,7 +14,7 @@ struct HomeTab: View {
             Image("appImage-1")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Text("Take a trip to the ocean by creating a under the sea jam! Select an instrument to get started.")
+            Text("Take a trip to the ocean by creating an under the sea jam! Select an instrument to get started.")
                 .font(.title)
                 .multilineTextAlignment(.center)
         }

@@ -3,7 +3,7 @@
 //  Under the Sea
 //
 //  Created by Daniel Riedel on 3/24/22.
-// ISSUES: does not play uke sound, not responsive at all.
+//
 
 import Foundation
 import SwiftUI
@@ -17,11 +17,10 @@ struct GuitarTab: View {
     
     var body: some View {
         ZStack {
-            Color.teal.opacity(0.25).ignoresSafeArea()
+            
             VStack {
                 Text("Play The Ukulele!")
                     .font(.title)
-                    //.foregroundColor(Color.black)
                 Image("UkeImg")
                     .resizable()
                     .padding()
@@ -43,7 +42,7 @@ struct GuitarTab: View {
                                 .opacity(0.01)
                                 .onTapGesture {
                                     playMidiApp2()
-                                    print(midiPlayer2.duration)
+                                    
                                 }
                             Rectangle()
                                 .frame(width: 25, height: 500)
@@ -51,7 +50,7 @@ struct GuitarTab: View {
                                 .opacity(0.01)
                                 .onTapGesture {
                                     playMidiApp3()
-                                    print(midiPlayer3.duration)
+                                    
                                 }
                             Rectangle()
                                 .frame(width: 25, height: 500)
@@ -59,15 +58,19 @@ struct GuitarTab: View {
                                 .opacity(0.01)
                                 .onTapGesture {
                                     playMidiApp4()
-                                    print(midiPlayer4.duration)
+                                    
                                 }
                         }.offset(x: 0, y: -50)
 
                     })
                 
+                   
                 
-                
-                        }
+            } .background(
+                Image("Background")
+                    .resizable()
+                    .scaledToFit()
+                        )
                     }
                 }
                 
@@ -79,12 +82,15 @@ struct GuitarTab: View {
         midiPlayer1.play()
     }
     func playMidiApp2() {
+        midiPlayer2.currentPosition = 0.0
         midiPlayer2.play()
     }
     func playMidiApp3() {
+        midiPlayer3.currentPosition = 0.0
         midiPlayer3.play()
     }
     func playMidiApp4() {
+        midiPlayer4.currentPosition = 0.0
         midiPlayer4.play()
     }
     
