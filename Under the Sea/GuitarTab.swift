@@ -79,12 +79,15 @@ struct GuitarTab: View {
         midiPlayer1.play()
     }
     func playMidiApp2() {
+        midiPlayer2.currentPosition = 0.0
         midiPlayer2.play()
     }
     func playMidiApp3() {
+        midiPlayer3.currentPosition = 0.0
         midiPlayer3.play()
     }
     func playMidiApp4() {
+        midiPlayer4.currentPosition = 0.0
         midiPlayer4.play()
     }
     
