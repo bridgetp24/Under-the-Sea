@@ -15,31 +15,31 @@ struct DrumKitTab: View {
                 let pitch = 61
                 Text("Bongos")
                     .font(.title)
-                    .foregroundColor(Color.black)
-
-
+                    .scaleEffect(2)
+                    .foregroundColor(Color.white)
         
                 ZStack {
                     Spacer()
 
                     Image("bongos2")
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .scaledToFit()
                     VStack() {
                         Spacer()
+                        
                         HStack {
                             Spacer()
                             NoteButton(text: "High bongo", midiModule: midiModule, pitch: UInt8(pitch - 1), duration: 1, channel: 9)
                                 .padding(.bottom, 40)
                                 .scaleEffect(2)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.white)
                             
                             Spacer()
                             Spacer()
                             NoteButton(text: "Low bongo", midiModule: midiModule, pitch: UInt8(pitch), duration: 1, channel: 9)
                                 .padding(.bottom, 40)
                                 .scaleEffect(2)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.white)
                             Spacer()
                         }
                         Spacer()
@@ -64,5 +64,6 @@ struct DrumKitTab: View {
 struct Previews_DrumKitTab_Previews: PreviewProvider {
     static var previews: some View {
         DrumKitTab()
+.previewInterfaceOrientation(.portrait)
     }
 }

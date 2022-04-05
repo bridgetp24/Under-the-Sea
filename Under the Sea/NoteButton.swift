@@ -42,6 +42,7 @@ private struct OnTouchDownGestureModifier: ViewModifier {
                         self.tapped = true
                         self.callback()
                     }
+                
                 }
                 .onEnded { _ in
                     self.tapped = false
