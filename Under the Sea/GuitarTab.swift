@@ -17,9 +17,7 @@ struct GuitarTab: View {
     
     var body: some View {
         ZStack {
-            Image("Background")
-                .resizable()
-                .scaledToFit()
+
             VStack {
                 Text("Play The Ukulele!")
                     .font(.title)
@@ -68,7 +66,10 @@ struct GuitarTab: View {
                 
                 
                 
-            }
+            }.background(
+                Image("Background")
+                    .resizable()
+                    .scaledToFill())
         }
             
     }
