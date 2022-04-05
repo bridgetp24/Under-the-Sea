@@ -3,7 +3,7 @@
 //  Under the Sea
 //
 //  Created by Daniel Riedel on 3/24/22.
-// ISSUES: does not play uke sound, not responsive at all.
+//
 
 import Foundation
 import SwiftUI
@@ -43,7 +43,7 @@ struct GuitarTab: View {
                                 .opacity(0.01)
                                 .onTapGesture {
                                     playMidiApp2()
-                                    print(midiPlayer2.duration)
+                                    
                                 }
                             Rectangle()
                                 .frame(width: 25, height: 500)
@@ -51,7 +51,7 @@ struct GuitarTab: View {
                                 .opacity(0.01)
                                 .onTapGesture {
                                     playMidiApp3()
-                                    print(midiPlayer3.duration)
+                                    
                                 }
                             Rectangle()
                                 .frame(width: 25, height: 500)
@@ -59,7 +59,7 @@ struct GuitarTab: View {
                                 .opacity(0.01)
                                 .onTapGesture {
                                     playMidiApp4()
-                                    print(midiPlayer4.duration)
+                                    
                                 }
                         }.offset(x: 0, y: -50)
 
