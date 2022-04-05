@@ -17,11 +17,10 @@ struct GuitarTab: View {
     
     var body: some View {
         ZStack {
-            Color.teal.opacity(0.25).ignoresSafeArea()
+            
             VStack {
                 Text("Play The Ukulele!")
                     .font(.title)
-                    //.foregroundColor(Color.black)
                 Image("UkeImg")
                     .resizable()
                     .padding()
@@ -65,9 +64,13 @@ struct GuitarTab: View {
 
                     })
                 
+                   
                 
-                
-                        }
+            } .background(
+                Image("Background")
+                    .resizable()
+                    .scaledToFit()
+                        )
                     }
                 }
                 
