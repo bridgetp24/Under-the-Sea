@@ -2,7 +2,7 @@
 //  GuitarTab.swift
 //  Under the Sea
 //
-//  Created by Daniel Riedel on 3/24/22.
+//  Created by Alijah Mallula on 3/24/22.
 //
 
 import Foundation
